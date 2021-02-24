@@ -1,0 +1,219 @@
+@charset "UTF-8";
+.cook__container {
+  padding: 0;
+  background: #ffffff;
+  overflow: hidden;
+  /* max-width: 400px; */
+  /* margin: 20px auto; */
+  font-size: 150%;
+  border: solid 1px #eeeeee;
+}
+
+.cook__container a {
+  color: #ffffff;
+}
+
+/* タイトル部分 */
+.cook__container .cook__title {
+  background: #b9ed58;
+  padding: 20px;
+  text-align: right;
+  font-size: 150%;
+  color: #ffffff;
+}
+
+.cook__container .cook__title .cook-logo {
+  margin: 0 /* auto */;
+  width: 200px;
+  height: 60px;
+  display: block;
+  background: url(svg/moguline_clear.svg) center no-repeat;
+}
+
+.cook__container .cook__title span {
+  font-size: 25px;
+}
+
+/* 新規登録ログインログアウトボタン */
+/* ボタン種類 */
+.cook__container .cook__title .btn-square-shadow {
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: rgb(255, 255, 255);
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  font-size: 50%;
+  
+}
+.cook__container .cook__title .btn-square-shadow:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+  border-bottom: none;
+}
+
+/* タイムライン部分 */
+.cook__container .cook__contents {
+  overflow: hidden;
+  position: relative;
+  line-height: 135%;
+}
+
+.cook__container .cook__contents.scroll {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.cook__container .cook__block {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  max-width: 700px;
+  position:relative;
+  left:200px;
+  margin-bottom: 5px;
+  border-bottom: solid 1px #eeeeee;
+  overflow: hidden;
+}
+
+.cook__container .cook__block:last-child {
+  border-bottom: solid 0px;
+}
+/* アイコン画像 */
+.cook__container .cook__block figure {
+  width: 80px;
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 80px;
+}
+  /* 正方形を用意 */
+.cook__container .cook__block figure img {
+  border-radius: 80%;
+  width: 80px;
+  height: 80px;
+}
+/* コメントエリア */
+.cook__container .cook__block-text {
+  margin: 0;
+  position: relative;
+  margin-left: 90px;
+  padding-right: 10px;
+}
+
+.cook__container .cook__block-text .name {
+  font-weight: bold;
+}
+
+.cook__container .cook__block-text .name .name_reply {
+  color: #8a9aa4;
+  margin-left: 10px;
+}
+
+.cook__container .cook__block-text .date {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  text-align: right;
+  color: #8a9aa4;
+}
+/* 本文 */
+.cook__container .cook__block-text .text {
+  margin: 5px 0;
+}
+/* 画像を貼る場合 */
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  }
+.cook__container .cook__block-text .text .in-pict img {
+  /* border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  margin: 5px 0;
+  width: 95%;
+  height: 200px;
+  object-fit: cover; */
+  position: relative;
+  width: 600px;
+  height: 600px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid darkgray;
+  /* img {
+  vertical-align: middle;
+  } */
+}
+
+/*///////////////////////////////////////////
+//埋め込みアイコン
+////////////////////////////////////////////*/
+
+.cook__container .cook__icon br{
+  display: none;
+}
+
+.cook__container .cook__icon .cook-bubble {
+  width: 24px;
+  height: 24px;
+  display: block;
+  padding-left: 30px;
+  background: url("svg/cook-bubble.svg") left no-repeat;
+  width: 25%;
+  float: left;
+  color: #8a9aa4;
+}
+
+.cook__container .cook__icon .cook-heart {
+  width: 24px;
+  height: 24px;
+  display: block;
+  padding-left: 30px;
+  background: url("svg/cook-heart.svg") left no-repeat;
+  width: 25%;
+  float: left;
+  color: #8a9aa4;
+}
+
+.cook__container .cook__icon .cook-loop {
+  width: 24px;
+  height: 24px;
+  display: block;
+  padding-left: 30px;
+  background: url("svg/cook-loop.svg") left no-repeat;
+  width: 25%;
+  float: left;
+  color: #8a9aa4;
+}
+
+/*投稿編集削除ボタン*/ 
+.btn-circle-3d {
+  display: inline-block;
+  text-decoration: none;
+  background: #ff8181;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #bd6565;
+  transition: .4s;
+  
+}
+
+.btn-circle-3d:active {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+}

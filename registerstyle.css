@@ -1,0 +1,116 @@
+body,p,form,input{margin: 0}
+#form{
+    width: 460px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #555;
+    }
+
+form p{
+    font-size: 14px;
+    }
+
+.form-title{
+    text-align: center;
+    }
+
+.name,.mail,.pass{
+    margin-bottom: 20px;
+    }
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 300px;
+    padding: 4px;
+    font-size: 14px;
+    }
+    
+.submit{
+    text-align: right;
+    }
+
+.resubmit{
+    text-align: left;
+    }
+
+ .cook__container {
+    padding: 0;
+    background: #ffffff;
+    overflow: hidden;
+    /* max-width: 400px; */
+    /* margin: 20px auto; */
+    font-size: 150%;
+    /* border: solid 1px #eeeeee; */
+  }
+  
+  .cook__container a {
+    color: #ffffff;
+  }
+  
+  /* タイトル部分 */
+  .cook__container .cook__title {
+    background: #b9ed58;
+    padding: 20px;
+    text-align: right;
+    font-size: 150%;
+    color: #ffffff;
+  }
+  
+  .cook__container .cook__title .cook-logo {
+    margin: 0 /* auto */;
+    width: 200px;
+    height: 60px;
+    display: block;
+    background: url(svg/moguline_clear.svg) center no-repeat;
+  }
+  
+  .cook__container .cook__title span {
+    font-size: 25px;
+  }
+
+   /* 新規登録ログインログアウトボタン */
+  /* ボタン種類 */
+  .cook__container .cook__title .btn-square-shadow {
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: rgb(255, 255, 255);
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    font-size: 50%;
+    
+  }
+  .cook__container .cook__title .btn-square-shadow:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+  }
+
+ /*投稿編集削除ボタン*/ 
+  .btn-circle-3d {
+    display: inline-block;
+    text-decoration: none;
+    background: #ff8181;
+    color: #FFF;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #bd6565;
+    transition: .4s;
+  }
+  
+  .btn-circle-3d:active {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    border-bottom: none;
+  }
